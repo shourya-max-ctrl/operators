@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operators in JavaScript</title>
+  <script>
+    function demonstrateOperators() {
+      // Arithmetic Operators
+      let a = 15;
+      let b = 4;
+      console.log("Arithmetic Operators:");
+      console.log(`a + b = ${a + b}`); // Addition
+      console.log(`a - b = ${a - b}`); // Subtraction
+      console.log(`a * b = ${a * b}`); // Multiplication
+      console.log(`a / b = ${a / b}`); // Division
+      console.log(`a % b = ${a % b}`); // Modulus
+
+      // Comparison Operators
+      console.log("\nComparison Operators:");
+      console.log(`a == b: ${a == b}`); // Equal
+      console.log(`a != b: ${a != b}`); // Not equal
+      console.log(`a > b: ${a > b}`);   // Greater than
+      console.log(`a < b: ${a < b}`);   // Less than
+
+      // Logical Operators
+      let x = true;
+      let y = false;
+      console.log("\nLogical Operators:");
+      console.log(`x && y: ${x && y}`); // Logical AND
+      console.log(`x || y: ${x || y}`); // Logical OR
+      console.log(`!x: ${!x}`);         // Logical NOT
+
+      // Assignment Operators
+      let c = 10;
+      console.log("\nAssignment Operators:");
+      c += 5; // c = c + 5
+      console.log(`c += 5: ${c}`);
+      c *= 2; // c = c * 2
+      console.log(`c *= 2: ${c}`);
+      c -= 3; // c = c - 3
+      console.log(`c -= 3: ${c}`);
+
+      // Bitwise Operators
+      let m = 10; // Binary: 1010
+      let n = 4;  // Binary: 0100
+      console.log("\nBitwise Operators:");
+      console.log(`m & n: ${m & n}`);  // AND
+      console.log(`m | n: ${m | n}`);  // OR
+      console.log(`m ^ n: ${m ^ n}`);  // XOR
+
+      // Membership (Array includes method)
+      let numbers = [1, 2, 3, 4, 5];
+      console.log("\nMembership Operators:");
+      console.log(`numbers.includes(3): ${numbers.includes(3)}`); // True
+      console.log(`numbers.includes(6): ${numbers.includes(6)}`); // False
+
+      // Identity Operators
+      let p = 5;
+      let q = 5;
+      let r = [1, 2, 3];
+      let s = [1, 2, 3];
+      console.log("\nIdentity Operators:");
+      console.log(`p === q: ${p === q}`); // True
+      console.log(`r === s: ${r === s}`); // False (different objects)
+    }
+  </script>
+</head>
+<body>
+  <h1>JavaScript Operators Demo</h1>
+  <button onclick="demonstrateOperators()">Run Operators Demo</button>
+  <p>Open the browser console to see the output.</p>
+</body>
+</html>
